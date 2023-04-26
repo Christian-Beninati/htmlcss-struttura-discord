@@ -4,3 +4,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* utilities */
+.d-flex {
+    display: flex;
+}
+
+
+/* header */
+header {
+    height: 40px;
+    background-color: #ADD8E6;
+}
+
+.container {
+     height: 100%;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     margin: 0 500px;
+   
+}
+
+.logo-header, .nav-header, .login-header {
+    border: 1px dashed black;
+    background-color:  #DAA41F;
+}
+
+.nav-header {
+    flex-grow: 2;
+    text-align: center;
+}
+
+.logo-header, .login-header {
+    flex-grow: 1;
+}
