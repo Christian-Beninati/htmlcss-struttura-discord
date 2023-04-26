@@ -39,3 +39,20 @@ header {
 .logo-header, .login-header {
     flex-grow: 1;
 }
+
+/* nav */
+.jumbotron {
+    height: 500px;
+    background-color: #0A0C8B;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.block-jumbotron {
+    width: 800px;
+    height: 400px;
+    background-color: #EE82EE;
+    border: 1px dashed black;
+}
