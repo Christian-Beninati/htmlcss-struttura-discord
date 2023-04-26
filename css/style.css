@@ -10,6 +10,9 @@
     display: flex;
 }
 
+.bord {
+    border: 1px dashed black;
+}
 
 /* header */
 header {
@@ -21,12 +24,11 @@ header {
 
 .container-header  {
      height: 30px;
-     width: 100%;
+     flex-basis: 100%;
      max-width: 65%;
 }
 
 .logo-header, .nav-header, .login-header {
-    border: 1px dashed black;
     background-color:  #DAA41F;
 }
 
@@ -56,47 +58,45 @@ header {
 }
 
 .block-jumbotron {
-    width: 800px;
+    flex-basis: 800px;
     height: 400px;
     background-color: #EE82EE;
-    border: 1px dashed black;
 }
 
 /* main column */
-.container-column-main, .container-column-mid {
+.container-column-main, .container-column-middle {
     height: 600px;
     justify-content: center;
     align-items: center;
 }
 
 .left-column-main{
-    width: 40%;
+    flex-basis: 40%;
     background-color: #2C90FF;
 }
 
 .right-column-main {
-    width: 25%;
+    flex-basis: 25%;
     background-color: #FCC0CB;
 }
 
-.left-column-main, .right-column-main, .left-column-middle, .right-column-middle{
+.left-column-main, .right-column-main, .left-column-mid, .right-column-mid{
     height: 500px;
-    border: 1px dashed black;
 }
 
 /* main column middle */
 
-.left-column-middle {
-    width: 25%;
+.left-column-mid {
+    flex-basis: 25%;
     background-color: #FCC0CB;
 }
 
-.right-column-middle {
-    width: 40%;
+.right-column-mid {
+    flex-basis: 40%;
     background-color: #2C90FF;
 }
 
-.container-column-mid {
+.container-column-middle {
     background-color: #D3D3D3;
 }
 
@@ -109,13 +109,12 @@ header {
 }
 
 .square-block {
-    width: 65%;
+    flex-basis: 65%;
     height: 800px;
     background-color: #228B22;
-    border: 1px dashed black;
 }
 
-/* footer */
+/* main footer */
 .main-footer {
     background-color: #24272A;
     height: 600px;
@@ -126,22 +125,22 @@ header {
 
 .left-column-footer {
     height: 500px;
-    width: 20%;
+    flex-basis: 20%;
     background-color: #F08080;
-    border: 1px dashed black;
 }
 
 .right-column-footer {
     height: 500px;
-    width: 45%;
+    flex-basis: 45%;
     background-color: #2EB2AA;
 }
 
 .small-column {
-    width: calc(100% / 4 );
+    flex-basis: calc(100% / 4 );
     border: 1px dashed #ffff
 }
 
+/* bar footer */
 .under-footer {
     background-color: #24272A;
     height:120px;
@@ -152,7 +151,7 @@ header {
 
 .bar-footer {
     background-color: #7FFDD4;
-    width: 65%;
+    flex-basis: 65%;
     height: 85px;
 }
 
@@ -163,8 +162,7 @@ header {
 }
 
 .btn-footer-right, .btn-footer-left {
-    width: 50px;
+    flex-basis: 50px;
     height: 20px;
     background-color: #FBB6C1;
-    border: 1px dashed #000000;
 }
