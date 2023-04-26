@@ -93,3 +93,17 @@ header {
 .container-column-mid {
     background-color: #D3D3D3;
 }
+
+.container-square {
+    height: 900px;
+    background-color: #D3D3D3;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-block {
+    width: 65%;
+    height: 800px;
+    background-color: #228B22;
+    border: 1px dashed black;
+}
