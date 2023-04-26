@@ -8,6 +8,7 @@
 /* utilities */
 .d-flex {
     display: flex;
+    flex-direction: row;
 }
 
 
@@ -17,9 +18,8 @@ header {
     background-color: #ADD8E6;
 }
 
-.container {
+.container-header  {
      height: 100%;
-     flex-direction: row;
      align-items: center;
      justify-content: center;
      margin: 0 500px;
@@ -40,19 +40,56 @@ header {
     flex-grow: 1;
 }
 
-/* nav */
-.jumbotron {
+/* main-header jumbotron*/
+
+.container-jumbotron {
     height: 500px;
     background-color: #0A0C8B;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
 
 .block-jumbotron {
     width: 800px;
     height: 400px;
     background-color: #EE82EE;
     border: 1px dashed black;
+}
+
+/* main column */
+.container-column, .container-column-mid {
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-column {
+    width: 40%;
+    background-color: #2C90FF;
+}
+
+.right-column {
+    width: 25%;
+    background-color: #FCC0CB;
+}
+
+.left-column, .right-column, .left-column-middle, .right-column-middle{
+    height: 500px;
+    border: 1px dashed black;
+}
+
+/* main column middle */
+
+.left-column-middle {
+    width: 25%;
+    background-color: #FCC0CB;
+}
+
+.right-column-middle {
+    width: 40%;
+    background-color: #2C90FF;
+}
+
+.container-column-mid {
+    background-color: #D3D3D3;
 }
